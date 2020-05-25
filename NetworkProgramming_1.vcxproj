@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="5_25_강의코드.cpp" />
+    <ClCompile Include="5_25_강의코드_클라.cpp" />
     <ClCompile Include="5_25_강의코드_서버.cpp" />
     <ClCompile Include="ser.cpp" />
     <ClCompile Include="Server.cpp" />
