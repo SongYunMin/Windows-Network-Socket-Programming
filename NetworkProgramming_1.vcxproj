@@ -141,6 +141,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="5_21일_강의코드.cpp" />
+    <ClCompile Include="5_25_강의코드_서버_2.cpp" />
     <ClCompile Include="5_25_강의코드_클라.cpp" />
     <ClCompile Include="5_25_강의코드_서버.cpp" />
     <ClCompile Include="6_1_실습_소스코드.cpp" />
