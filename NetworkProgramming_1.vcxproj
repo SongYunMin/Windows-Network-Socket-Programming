@@ -100,7 +100,7 @@
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <ConformanceMode>false</ConformanceMode>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -149,6 +149,12 @@
     <ClCompile Include="ser.cpp" />
     <ClCompile Include="Server.cpp" />
     <ClCompile Include="sv.cpp" />
+    <ClCompile Include="실습5-1%28server%29.cpp" />
+    <ClCompile Include="실습5-1(client).cpp" />
+    <ClCompile Include="실습5-2(client).cpp" />
+    <ClCompile Include="실습5-2(server)cpp.cpp" />
+    <ClCompile Include="실습5-3(client).cpp" />
+    <ClCompile Include="실습5-3(server).cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
