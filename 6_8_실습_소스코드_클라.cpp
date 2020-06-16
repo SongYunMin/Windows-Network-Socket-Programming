@@ -1,3 +1,4 @@
+//#define _CRT_SECURE_NO_WARNINGS         // 최신 VC++ 컴파일 시 경고 방지
 //#define _WINSOCK_DEPRECATED_NO_WARNINGS // 최신 VC++ 컴파일 시 경고 방지
 //#pragma comment(lib, "ws2_32")
 //#include <winsock2.h>
@@ -44,18 +45,12 @@
 //	if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0)
 //		return 1;
 //
-//	// socket()
-//	SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);
-//	if (sock == INVALID_SOCKET) err_quit("socket()");
-//
-//	// connect()
+//	// connect() 호출에 사용할 변수
 //	SOCKADDR_IN serveraddr;
 //	ZeroMemory(&serveraddr, sizeof(serveraddr));
 //	serveraddr.sin_family = AF_INET;
 //	serveraddr.sin_addr.s_addr = inet_addr(SERVERIP);
 //	serveraddr.sin_port = htons(SERVERPORT);
-//	retval = connect(sock, (SOCKADDR*)&serveraddr, sizeof(serveraddr));
-//	if (retval == SOCKET_ERROR) err_quit("connect()");
 //
 //	// 데이터 통신에 사용할 변수
 //	char buf[BUFSIZE];
@@ -69,29 +64,29 @@
 //
 //	// 서버와 데이터 통신
 //	for (int i = 0; i < 4; i++) {
+//		// socket()
+//		SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);
+//		if (sock == INVALID_SOCKET) err_quit("socket()");
+//
+//		// connect()
+//		retval = connect(sock, (SOCKADDR*)&serveraddr, sizeof(serveraddr));
+//		if (retval == SOCKET_ERROR) err_quit("connect()");
+//
 //		// 데이터 입력(시뮬레이션)
 //		len = strlen(testdata[i]);
 //		strncpy(buf, testdata[i], len);
 //
-//		// 데이터 보내기(고정 길이)
-//		retval = send(sock, (char*)&len, sizeof(int), 0);
-//		if (retval == SOCKET_ERROR) {
-//			err_display("send()");
-//			break;
-//		}
-//
-//		// 데이터 보내기(가변 길이)
+//		// 데이터 보내기
 //		retval = send(sock, buf, len, 0);
 //		if (retval == SOCKET_ERROR) {
 //			err_display("send()");
 //			break;
 //		}
-//		printf("[TCP 클라이언트] %d+%d바이트를 "
-//			"보냈습니다.\n", sizeof(int), retval);
-//	}
+//		printf("[TCP 클라이언트] %d바이트를 보냈습니다.\n", retval);
 //
-//	// closesocket()
-//	closesocket(sock);
+//		// closesocket()
+//		closesocket(sock);
+//	}
 //
 //	// 윈속 종료
 //	WSACleanup();
