@@ -145,12 +145,17 @@
     <ClCompile Include="5_25_강의코드_클라.cpp" />
     <ClCompile Include="5_25_강의코드_서버.cpp" />
     <ClCompile Include="6_11_실습_소스코드.cpp" />
+    <ClCompile Include="6_15_ExThread3.cpp" />
+    <ClCompile Include="6_15_MultithreadTCPServer.cpp" />
+    <ClCompile Include="6_18_ExCriticalSection.cpp" />
+    <ClCompile Include="6_18_ExEvent.cpp" />
     <ClCompile Include="6_1_실습_소스코드.cpp" />
     <ClCompile Include="6_1_실습_소스코드_클라.cpp" />
     <ClCompile Include="6_22_UDPClient.cpp" />
     <ClCompile Include="6_22_UDPServer.cpp" />
     <ClCompile Include="6_8_실습_소스코드_서버.cpp" />
     <ClCompile Include="6_8_실습_소스코드_클라.cpp" />
+    <ClCompile Include="6_15_ExThread2.cpp" />
     <ClCompile Include="ser.cpp" />
     <ClCompile Include="Server.cpp" />
     <ClCompile Include="sv.cpp" />
