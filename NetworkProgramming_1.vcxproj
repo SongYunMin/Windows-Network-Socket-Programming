@@ -147,6 +147,8 @@
     <ClCompile Include="6_11_실습_소스코드.cpp" />
     <ClCompile Include="6_1_실습_소스코드.cpp" />
     <ClCompile Include="6_1_실습_소스코드_클라.cpp" />
+    <ClCompile Include="6_22_UDPClient.cpp" />
+    <ClCompile Include="6_22_UDPServer.cpp" />
     <ClCompile Include="6_8_실습_소스코드_서버.cpp" />
     <ClCompile Include="6_8_실습_소스코드_클라.cpp" />
     <ClCompile Include="ser.cpp" />

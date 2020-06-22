@@ -69,5 +69,11 @@
     <ClCompile Include="6_11_실습_소스코드.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="6_22_UDPClient.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6_22_UDPServer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
